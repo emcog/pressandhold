@@ -40,16 +40,16 @@ The MVP fits in with part 4 of [Government Design Principles](https://www.gov.uk
 
 
 ## Tech stack
-– Reuse some or all of an existing press and hold "engine". I've written this as a javascript module.
-– React
-– [WebSockets](https://developer.cdn.mozilla.net/en-US/docs/Web/API/WebSockets_API) e.g. socket.io, Rsocket. Could be implmemented in Node or Java.
-– SASS & possibly atomic css library e.g Tailwind
-– Probably non-relational db e.g. Mongo db
-– Firebase, user authentication
+* Reuse some or all of an existing press and hold "engine". I've written this as a javascript module.
+* React
+* [WebSockets](https://developer.cdn.mozilla.net/en-US/docs/Web/API/WebSockets_API) e.g. socket.io, Rsocket. Could be implmemented in Node or Java.
+* SASS & possibly atomic css library e.g Tailwind
+* Probably non-relational db e.g. Mongo db
+* Firebase, user authentication
 
 ## Team
-– Currently me only
-– Ideally want to work in a pair or team
-– This is relevant to anyone who is interested in Human Computer Interactions, UX 
-– Real time updates in the browser, e.g. Trello, (webSocket)
-– I'm also open to combining this with another team / knowledge exchanging with other teams 
+* Currently me only
+* Ideally want to work in a pair or team
+* This is relevant to anyone who is interested in Human Computer Interactions, UX 
+* Real time updates in the browser, e.g. Trello, (webSocket)
+* I'm also open to combining this with another team / knowledge exchanging with other teams 
