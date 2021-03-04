@@ -52,3 +52,4 @@ The MVP fits in with part 4 of [Government Design Principles](https://www.gov.uk
 – Ideally want to work in a pair or team
 – This is relevant to anyone who is interested in Human Computer Interactions, UX 
 – Real time updates in the browser, e.g. Trello, (webSocket)
+– I'm also open to combining this with another team / knowledge exchanging with other teams 
