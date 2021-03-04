@@ -13,10 +13,10 @@ This project will onboard users to the novel gesture, press and hold. It will bu
 This will likely involve a deep dive into state, persistance and probably hooks too.
 
 ### MVP demo
-01. Introducing the user to press and hold: An interface which invites a user to press and hold using written instructions and or graphical affordances.
-02a.Testing whither the user has completed a press and hold: Define a minimum time for a press and hold, if the user completes this time they will progress to the next interface, if they fail to complete a press and hold they will remain on this interface but the state will update to give them a prompt.
+01.  Introducing the user to press and hold: An interface which invites a user to press and hold using written instructions and or graphical affordances.
+02a. Testing whither the user has completed a press and hold: Define a minimum time for a press and hold, if the user completes this time they will progress to the next interface, if they fail to complete a press and hold they will remain on this interface but the state will update to give them a prompt.
 02b. Real time feedback: during the testing phase a user could be given a prompt or visual signifier to show how long they have been pressing
-03. Completing the press and hold. Once the first press and hold has been completed a new display is shown.
+03.  Completing the press and hold. Once the first press and hold has been completed a new display is shown.
 
 ## Extensions
 ### Back end
@@ -33,16 +33,22 @@ Build on step 03. of the MVP demo and use the press and hold to as a navigationa
 
 
 
-##Broader context – Government Design Principles (award winning)
+## Broader context – Government Design Principles (award winning)
 The MVP fits in with part 4 of [Government Design Principles](https://www.gov.uk/guidance/government-design-principles).
 " **Do the hard work to make it simple** – Making something look simple is easy. Making something simple to use is much harder - especially when the underlying systems are complex - but that’s what we should be doing. Don’t take “It’s always been that way” for an answer. It’s usually more and harder work to make things simple, but it’s the right thing to do."
 (There are jobs and contracts out there which advertise for knowledge of these).
 
 
-##Tech stack
+## Tech stack
 – Reuse some or all of an existing press and hold "engine". I've written this as a javascript module.
 – React
 – [WebSockets](https://developer.cdn.mozilla.net/en-US/docs/Web/API/WebSockets_API) e.g. socket.io, Rsocket. Could be implmemented in Node or Java.
 – SASS & possibly atomic css library e.g Tailwind
 – Probably non-relational db e.g. Mongo db
 – Firebase, user authentication
+
+## Team
+– Currently me only
+– Ideally want to work in a pair or team
+– This is relevant to anyone who is interested in Human Computer Interactions, UX 
+– Real time updates in the browser, e.g. Trello, (webSocket)
