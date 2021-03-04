@@ -1,10 +1,10 @@
 # How did "swipe right" become understood?
 A long time ago, swipe right was meaningless. Now it is a dictionary entry. It is both meaningful in both offline and digital contexts. ["(Verb) A phrase used to describe your acceptance of something. The term was originally a reference to the Tinder app."](https://www.urbandictionary.com/define.php?term=Swipe%20right)
-If you were to give an app to a person and say "swipe right to proceed" the chances are they would understand what how to use the app. But how did this first come to be?
+If you were to give an app to a person and say "swipe right to proceed" the chances are they would understand how to use the app. But how did this first come to be?
 Before it was commonly understood there had to be a way of seeding this knowledge.
 
 ## Seeding a new gesture
-Unlike swipe right, Press and hold has little to no meaning in digital/UX context and no meaning in a broader-cultural context. Despite this it is in use, iphones, trackpads and pianos all facilitate a press and hold. Each has their own unique output.
+Unlike swipe right, Press and hold has little to no meaning in digital/UX context and no meaning in a broader-cultural context. Despite this it is in use, iPhones, trackpads and pianos all facilitate a press and hold. Each has their own unique output.
 
 ##MVP – Front end
 This project will onboard users to the novel gesture, press and hold. It will build the logic to test whither a user can press and hold. If they can not, they will be given tips and or demos on how to press and hold.
