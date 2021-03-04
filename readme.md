@@ -1,19 +1,19 @@
-#How did "swipe right" become understood?
+# How did "swipe right" become understood?
 A long time ago, swipe right was meaningless. Now it is a dictionary entry. It is both meaningful in both offline and digital contexts.  
 ["(verb) A phrase used to describe your acceptance of something. The term was originally a reference to the Tinder app."](https://www.urbandictionary.com/define.php?term=Swipe%20right)
 If you were to give an app to a person and say "swipe right to proceed" the chances are they would understand what how to use the app. But how did this first come to be?
 Before it was commonly understood there had to be a way of seeding this knowledge.
 
-##Seeding a new gesture
+## Seeding a new gesture
 Unlike swipe right, Press and hold has little to no meaning in digital/UX context and no meaning in a broader-cultural context. Despite this it is in use, iphones, trackpads and pianos all facilitate a press and hold. Each has their own unique output.
 
 ##MVP – Front end
 This project will onboard users to the novel gesture, press and hold. It will build the logic to test whither a user can press and hold. If they can not, they will be given tips and or demos on how to press and hold.
 
-###MVP tech, React.
+### MVP tech, React.
 This will likely involve a deep dive into state, persistance and probably hooks too.
 
-###MVP demo
+### MVP demo
 01. Introducing the user to press and hold: An interface which invites a user to press and hold using written instructions and or graphical affordances.
 02a.Testing whither the user has completed a press and hold: Define a minimum time for a press and hold, if the user completes this time they will progress to the next interface, if they fail to complete a press and hold they will remain on this interface but the state will update to give them a prompt.
 02b. Real time feedback: during the testing phase a user could be given a prompt or visual signifier to show how long they have been pressing
