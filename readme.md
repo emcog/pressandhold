@@ -1,4 +1,4 @@
-# How did "swipe right" become understood?
+# How did swipe right get its meaning?
 A long time ago, swipe right was meaningless. Now it is a dictionary entry. It is both meaningful in both offline and digital contexts. ["(Verb) A phrase used to describe your acceptance of something. The term was originally a reference to the Tinder app."](https://www.urbandictionary.com/define.php?term=Swipe%20right)
 If you were to give an app to a person and say "swipe right to proceed" the chances are they would understand how to use the app. But how did this first come to be?
 Before it was commonly understood there had to be a way of seeding this knowledge.
