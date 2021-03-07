@@ -4,38 +4,41 @@ import React, {useRef} from "react";
 const PressHold =() => {
     // const [count, setCount ] = useState(0);
 
-    const countRef = useRef(0);
-    const idIncrementCountRef = () => requestAnimationFrame(incrementCountRef);
+    let countRef = useRef(0);
+    let idIncrementCountRef;
+    let idDecrementCountRef;
 
-    const handlePressHold = () => {
+
+    const handlePress = () => {
         incrementCountRef()
-    //  TODO  cancel decrementCountRef
+        cancelAnimationFrame(idDecrementCountRef)
     }
 
-
     const incrementCountRef = () => {
-        idIncrementCountRef();
         countRef.current++;
-        console.log(`mouse down ${countRef.current}`);
+        console.log(`press ${countRef.current}`);
+        idIncrementCountRef = requestAnimationFrame(incrementCountRef)
     }
 
 
 
     const handleRelease = () => {
-        countRef.current--;
-        console.log(`mouse up`)
-
-        cancelAnimationFrame(idIncrementCountRef());
+        cancelAnimationFrame(idIncrementCountRef);
+        decrementCountRef();
     }
 
-
-    //open the phab module
+    const decrementCountRef = () => {
+        countRef.current--;
+        console.log(`release ${countRef.current}`);
+        idDecrementCountRef = requestAnimationFrame(decrementCountRef);
+    }
 
 
     return(
         <>
-            <button onMouseDown={handlePressHold}
-                    onTouchStart={handlePressHold}
+
+            <button onMouseDown={handlePress}
+                    onTouchStart={handlePress}
                     onMouseUp={handleRelease}
                     onTouchEnd={handleRelease}
             />
