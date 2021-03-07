@@ -38,8 +38,7 @@ const PressHold =() => {
     }
 
     const updateCSSVarSize = () => {
-        let size = Number(countRef.current);
-        document.documentElement.style.setProperty(`--size`, size);
+        document.documentElement.style.setProperty(`--size`, countRef.current);
     }
 
 
@@ -50,7 +49,7 @@ const PressHold =() => {
                     onTouchStart={handlePress}
                     onMouseUp={handleRelease}
                     onTouchEnd={handleRelease}
-            />
+                    >Press and hold</button>
 
         </>
     );
