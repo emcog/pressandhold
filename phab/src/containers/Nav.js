@@ -1,24 +1,26 @@
 import React, {useState} from "react";
+// import { Link, useHistory } from "react-router-dom";
 
 const Nav = () => {
 
+    // const history = useState();
+
+    // const goBack = () => { history.goBack() }
+
     const [ isVisible, setVisibility ] = useState(false);
 
-    // const toggleVisibility = () => { isVisible ? setVisibility(false) : setVisibility(true) }
-
-    const toggleVisibility = () => {
-        setVisibility(!isVisible)
-    }
+    const toggleVisibility = () => { setVisibility(!isVisible) }
 
 
     return(
         <>
         <button onClick={toggleVisibility}>Menu</button>
-            <nav className={isVisible ? 'hide' : 'show'}>
+            <nav className={isVisible ? 'hidden' : 'block'}>
                 <ul>
-                    <li>Create an account to unlock more features and help us grow</li>
-                    <li>02</li>
-                    <li>03</li>
+                    <li>
+                        Sign up
+                        {/*<Link to="/">Home</Link>*/}
+                    </li>
                 </ul>
             </nav>
         </>

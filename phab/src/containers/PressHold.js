@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import TextArea from "./TextArea";
 
 
 const PressHold =() => {
@@ -7,6 +8,7 @@ const PressHold =() => {
     const countRef = useRef(0);
     let idIncrementCountRef;
     let idDecrementCountRef;
+    const testProp = 'test prop';
 
 
     const handlePress = () => {
@@ -28,23 +30,23 @@ const PressHold =() => {
 
     const loopingDecrementCountRef = () => {
         countRef.current--;
-        let counter = countRef.current;
-        if( counter === 0) {cancelAnimationFrame(idDecrementCountRef);}
-
-        console.log(counter)
         console.log(`release ${countRef.current}`);
         idDecrementCountRef = requestAnimationFrame(loopingDecrementCountRef);
+        if( countRef.current <= 0) {cancelAnimationFrame(idDecrementCountRef);}
         updateCSSVarSize();
     }
 
     const updateCSSVarSize = () => {
-        document.documentElement.style.setProperty(`--size`, countRef.current);
+        let size = countRef.current.toString();
+        const px = 'px';
+        document.documentElement.style.setProperty(`--size`, size + px);
     }
 
 
     return(
         <>
-
+            {/*<TextArea testProp={testProp}/>*/}
+            <TextArea countRef={countRef} testProp={testProp}/>
             <button onMouseDown={handlePress}
                     onTouchStart={handlePress}
                     onMouseUp={handleRelease}
